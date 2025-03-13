@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vista Estudiante</title>
+    <script src="../js/tau-prolog.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="text-center">Selección de Perfil</h1>
+    
+        <div class="row">
+            <!-- Aptitudes -->
+            <div class="col-md-3">
+                <h5>Aptitudes</h5>
+                <div id="aptitudesContainer"></div>
+            </div>
+    
+            <!-- Preferencias -->
+            <div class="col-md-3">
+                <h5>Preferencias</h5>
+                <div id="preferenciasContainer"></div>
+            </div>
+    
+            <!-- Habilidades -->
+            <div class="col-md-3">
+                <h5>Habilidades</h5>
+                <div id="habilidadesContainer"></div>
+            </div>
+    
+            <!-- Intereses -->
+            <div class="col-md-3">
+                <h5>Intereses</h5>
+                <div id="interesesContainer"></div>
+            </div>
+        </div>
+    
+        <div class="text-center mt-4">
+            <button id="generateResults" class="btn btn-primary btn-lg">Generar Resultados</button>
+        </div>
+    
+        <!-- Fila con las tablas -->
+        <div class="row mt-5">
+            <!-- Tabla de Carreras -->
+            <div class="col-md-6">
+                <h2 class="text-center">Carreras Recomendadas</h2>
+                <table class="table mt-3">
+                    <thead>
+                        <tr>
+                            <th>Carrera</th>
+                            <th>Puntaje</th>
+                        </tr>
+                    </thead>
+                    <tbody id="careersTableBody"></tbody>
+                </table>
+            </div>
+    
+            <!-- Tabla de Facultades -->
+            <div class="col-md-6">
+                <h2 class="text-center">Facultades Recomendadas</h2>
+                <table class="table mt-3">
+                    <thead>
+                        <tr>
+                            <th>Facultad</th>
+                            <th>Puntaje</th>
+                        </tr>
+                    </thead>
+                    <tbody id="facultiesTableBody"></tbody>
+                </table>
+            </div>
+        </div>
+    
+        <!-- Fila con las gráficas -->
+        <div class="row mt-5">
+            <!-- Gráfica de Carreras -->
+            <div class="col-md-6">
+                <canvas id="careersChart"></canvas>
+            </div>
+    
+            <!-- Gráfica de Facultades -->
+            <div class="col-md-6">
+                <canvas id="facultiesChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/studentModule.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
